@@ -1,12 +1,17 @@
-.PHONY: format lint quality test
+.PHONY: format lint lint-fix quality fix test
 
 format:
 	black .
 
 lint:
-	flake8 .
+	ruff check .
+
+lint-fix:
+	ruff check --fix .
 
 quality: format lint
+
+fix: format lint-fix
 
 test:
 	poetry run pytest

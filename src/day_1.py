@@ -1,5 +1,6 @@
-from src.settings import PUZZLE_INPUT_PATH
 import re
+
+from src.settings import PUZZLE_INPUT_PATH
 
 
 def compute_star_1(puzzle_input: str) -> int:
