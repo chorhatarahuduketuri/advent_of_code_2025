@@ -1,3 +1,5 @@
+.PHONY: format lint quality test
+
 format:
 	black .
 
@@ -7,4 +9,4 @@ lint:
 quality: format lint
 
 test:
-	pytest
+	poetry run pytest
