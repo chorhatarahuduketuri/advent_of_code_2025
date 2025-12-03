@@ -40,5 +40,6 @@ def compute_star_2(puzzle_input: str) -> int:
     return sum_invalid_ids
 
 
-print("day 2, star 1: ", compute_star_1(open(PUZZLE_INPUT_PATH / "day2.txt").read()))
-print("day 2, star 2: ", compute_star_2(open(PUZZLE_INPUT_PATH / "day2.txt").read()))
+if __name__ == "__main__":
+    print("day 2, star 1: ", compute_star_1(open(PUZZLE_INPUT_PATH / "day2.txt").read()))
+    print("day 2, star 2: ", compute_star_2(open(PUZZLE_INPUT_PATH / "day2.txt").read()))

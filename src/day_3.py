@@ -36,5 +36,6 @@ def compute_star_2(puzzle_input: str) -> int:
     return max_possible_joltage
 
 
-print("day 3, star 1: ", compute_star_1(open(PUZZLE_INPUT_PATH / "day3.txt").read()))
-print("day 3, star 2: ", compute_star_2(open(PUZZLE_INPUT_PATH / "day3.txt").read()))
+if __name__ == "__main__":
+    print("day 3, star 1: ", compute_star_1(open(PUZZLE_INPUT_PATH / "day3.txt").read()))
+    print("day 3, star 2: ", compute_star_2(open(PUZZLE_INPUT_PATH / "day3.txt").read()))

@@ -40,5 +40,6 @@ def compute_star_2(puzzle_input: str) -> int:
     return count_of_zero_crossings
 
 
-print("day 1, star 1: ", compute_star_1(open(PUZZLE_INPUT_PATH / "day1.txt").read()))
-print("day 1, star 2: ", compute_star_2(open(PUZZLE_INPUT_PATH / "day1.txt").read()))
+if __name__ == "__main__":
+    print("day 1, star 1: ", compute_star_1(open(PUZZLE_INPUT_PATH / "day1.txt").read()))
+    print("day 1, star 2: ", compute_star_2(open(PUZZLE_INPUT_PATH / "day1.txt").read()))
