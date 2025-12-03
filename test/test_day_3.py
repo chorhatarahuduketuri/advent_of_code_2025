@@ -7,10 +7,13 @@ input_1_day_3 = """987654321111111
 234234234234278
 818181911112111"""
 
-input_2_day_3 = """"""
+input_2_day_3 = """987654321111111
+811111111111119
+234234234234278
+818181911112111"""
 
 output_day_3_star_1 = 357
-output_day_3_star_2 = ...
+output_day_3_star_2 = 3121910778619
 
 day_3_star_1_test_input = [(input_1_day_3, output_day_3_star_1)]
 day_3_star_2_test_input = [(input_2_day_3, output_day_3_star_2)]
