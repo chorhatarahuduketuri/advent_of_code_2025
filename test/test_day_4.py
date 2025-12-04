@@ -13,10 +13,19 @@ input_1_day_4 = """..@@.@@@@.
 .@@@@@@@@.
 @.@.@@@.@."""
 
-input_2_day_4 = """"""
+input_2_day_4 = """..@@.@@@@.
+@@@.@.@.@@
+@@@@@.@.@@
+@.@@@@..@.
+@@.@@@@.@@
+.@@@@@@@.@
+.@.@.@.@@@
+@.@@@.@@@@
+.@@@@@@@@.
+@.@.@@@.@."""
 
 output_day_4_star_1 = 13
-output_day_4_star_2 = ...
+output_day_4_star_2 = 43
 
 day_4_star_1_test_input = [(input_1_day_4, output_day_4_star_1)]
 day_4_star_2_test_input = [(input_2_day_4, output_day_4_star_2)]
