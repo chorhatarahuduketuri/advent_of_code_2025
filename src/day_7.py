@@ -30,8 +30,30 @@ def compute_star_1(puzzle_input: str) -> int:
     return beam_splits
 
 
+def propagate_timelines(grid: np.ndarray) -> int:
+    for row_num in range(1, grid.shape[0]):
+        for col_num in range(grid.shape[1]):
+            if grid[row_num, col_num] == -1:
+                if grid[row_num - 1, col_num] > 0:
+                    # There are no consecutive splitters (or any adjacent at all), so this is blind-safe
+                    grid[row_num, col_num - 1] += grid[row_num - 1, col_num]
+                    grid[row_num, col_num + 1] += grid[row_num - 1, col_num]
+            else:
+                if grid[row_num - 1, col_num] > 0:
+                    grid[row_num, col_num] += grid[row_num - 1, col_num]
+    timelines_count = sum(grid[-1])
+    return timelines_count
+
+
 def compute_star_2(puzzle_input: str) -> int:
-    pass
+    grid = np.asarray(
+        [
+            [0 if position == "." else 1 if position == "S" else -1 for position in row.strip()]
+            for row in puzzle_input.strip().split()
+        ]
+    )
+    timelines_count = propagate_timelines(grid)
+    return timelines_count
 
 
 if __name__ == "__main__":
