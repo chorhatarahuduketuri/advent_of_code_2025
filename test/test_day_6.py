@@ -8,10 +8,14 @@ input_1_day_6 = """123 328  51 64
 *   +   *   +  
 """
 
-input_2_day_6 = """"""
+input_2_day_6 = """123 328  51 64 
+ 45 64  387 23 
+  6 98  215 314
+*   +   *   +  
+"""
 
 output_day_6_star_1 = 4277556
-output_day_6_star_2 = ...
+output_day_6_star_2 = 3263827
 
 day_6_star_1_test_input = [(input_1_day_6, output_day_6_star_1)]
 day_6_star_2_test_input = [(input_2_day_6, output_day_6_star_2)]
